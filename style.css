@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: borter-box;
+}
+
+nav {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     background-color: black;
+}
+
+ul  {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+img {
+    20pix;
+}
