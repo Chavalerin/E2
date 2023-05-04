@@ -4,6 +4,46 @@
     box-sizing: borter-box;
 }
 
+.banner {
+    background-image: url("imag/logo.png");
+    height: 900px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner::before{
+ content: "";
+ height: 100%;
+ width: 100%;
+ background: greenyellow;
+ opacity: 0.3;
+}
+
+.banner__info{
+    padding: 0.3em;
+    position: absolute;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    color: black;
+    margin: auto;
+}
+
+.banner__title{
+    line-height: 1.5;
+    font-size: 2em;
+    font-family: sans-serif;
+}
+
+.banner__p{
+    line-height: 2;
+    font-size: 0.9;
+    font-family: sans-serif;
+}
+ 
+
 nav {
      display: flex;
      justify-content: space-around;
@@ -12,6 +52,16 @@ nav {
 }
 a {
     color: red;
+}
+p  {
+    color: rgb(240, 247, 234);
+}
+h1 {
+ 
+}
+
+p {
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
 }
 
 ul  {
@@ -22,4 +72,8 @@ ul  {
 
 img {
 width: 40px;
+}
+
+.wall{
+ height: 100vh;   
 }
