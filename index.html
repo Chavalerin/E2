@@ -4,39 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+    <title>ChavalerosAppBar</title>
     <link rel="stylesheet" href="style.css">
-    <title>Chavaleros Bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    
-    <nav>
-        <img src="imag/logo.png" alt="">
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Galeria</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="#">Contacto</a></li>
+ 
+    <header class="header">
+        <img src="imag/cerveza logo.png" alt="logo">
+    <nav class="navbar">
+        <label for="toggle-menu"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="toggle-menu">
+        <ul class="navbar-list">
+            <li><a class="navbar-link" href="#">Inicio</a></li>
+            <li><a class="navbar-link" href="#">Galeria</a></li>
+            <li><a class="navbar-link" href="nosotros.html">Nosotros</a></li>
+            <li><a class="navbar-link" href="#">Contacto</a></li>
         </ul>
 
     </nav>
+</header>
 
-    <section class="banner">
-        <div class="banner__info">
-            <h1 class="banner__title">
-             Tu sueña, nosotros lo hacemos, este es tu lugar de encuentos.
-            </h1>
-            <p class="banner__p">
-                Bienvenidos a #Chavaleros.com.ar, en esta oportunidad tendras un lugar donde pasarla bien y recordar las mejores anecdotas, donde podras
-                hacer de tu lugar favorito algo interactivo para pasar el mejor momento.
-            </p>
+<main>
+    <section id="hero">
+    <div class="hero-presentacion">
+        <h1>Estas, en tu lugar preferido <span>#ChavalerosAppBar </span></h1>
+        <p>
+            Donde encontraras la mejor movida social de la provincia y el pais.
+        </p>
+        <div class="button-container">
+            <a href="#" class="primary-btn">Ofertas</a>
+            <a href="#" class="alt-btn">Reservas</a>
         </div>
-
+    </div>    
+    <img src="imag/barra de cerveza.jpeg" alt="imagen de una barra de cerveza" class="hero-img">
     </section>
+    <section id="about">
+    <p>
+    Es mas facil empezar el dia cuando sabes que terminara con una buena cerveza, siente la belleza de la noche,
+    disfruta tu comida con buena musica y sientete despierto toda la noche #ChavalerosAppBar.-
+    </p>    
+    </section>
+    
+    <h2>Servicios Adicionales</h2>
+    <div class="servicios">
+    <section class="servicios">
+    <h3>Descargas</h3>
+    <div class="iconos">
+    <img src="imag/icons8-carpeta-de-descargas-64.png" alt="carpeta de descarga">
+    </div>
+    <p>descarga la app del bar</p>
+    </section>
+    <section>
+    <h3>Registrate</h3>
+    <div class="iconos">
+    <img src="imag/icons8-añadir-usuario-masculino-48.png" alt="añadir persona">
+    </div>
+    <p>Registrate y accede a beneficios</p>
+    </section>
+    <section>
+    <h3>Sorteos</h3>
+    <div class="iconos">
+    <img src="imag/icons8-lottery-64.png" alt="imagen de loteria">
+    </div>
+    <p>Aqui veras a los ganadores del mes</p>
+    </section>
+</div>
+</main>    
 
-    <div class="wall"></div>
+<footer>
+    <img src="imag/cerveza logo.png" alt="logo de cerveza" class="logo">
+    <div class="social-icons-container">
+        <a href="#" class="social-icons-container"></a>
+        <a href="#" class="social-icons-container"></a>
+        <a href="#" class="social-icons-container"></a>
+        <a href="#" class="social-icons-container"></a>
+    </div>
+    <ul class="footer-menu-container">
+        <li class="menu-item">Legal</li>
+        <li class="menu-item">Cookies</li>
+        <li class="menu-item">Privacy</li>
+    </ul>
+    <span class="Copyright"></span>
+</footer>
+
 </body>
 </html>

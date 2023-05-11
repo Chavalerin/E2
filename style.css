@@ -1,79 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Roboto+Slab:wght@600&family=Sigmar&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: borter-box;
+    font-family: 'Instrument Serif', serif; font-family: 'Roboto Slab', serif; font-family: 'Sigmar', cursive;
 }
 
-.banner {
-    background-image: url("imag/logo.png");
-    height: 900px;
-    position: relative;
+#principal {
+    min-height: 100vh;
+    background-image: url(imag/textura\ de\ cerveza.jpg);
+}
+
+.header {
+    height: 80px;
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    padding: 0px 80px;
+    box-shadow: yellow; 0px 8px 24px;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 1;
+    image: 0.10px;
+    }
+
+.header img {
+    height: 70%;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 80px;
+    
+    
+}
+
+.navbar {
+    display: flex;
+    
+
+    }
+.navbar i {
+    font-size: 10px;
+    display: none;
+}
+
+#toggle-menu {
+display: none;
+
+}
+
+
+
+.navar-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 50;
+    
+    
+}
+
+main {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+#hero {
+    margin-top: 80px;
+    display: flex;
+    padding: 70px 0px;
+    width: 90%;
     justify-content: center;
 }
 
-.banner::before{
- content: "";
- height: 100%;
- width: 100%;
- background: greenyellow;
- opacity: 0.3;
+.hero-presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
 }
 
-.banner__info{
-    padding: 0.3em;
-    position: absolute;
-    width: 100%;
-    max-width: 900px;
+.hero-presentation h1 {
+    font-weight: 700;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.hero-presentation p {
+font-weight: 300;
+font-size: 14px;
+max-width: 350px;
+color: black;
+}
+
+.button-container {
+    display: flex;
+    gap: 15px;
+}
+
+.button-container a{
+    text-decoration: none;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 8px 15px; 
+    font-size: 12px;
+    font-weight: 600;
+}
+.primary-btn {
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+.alt-btn {
+    background-color: rgb(253, 253, 253);
+    color: rgb(0, 0, 0);
+}
+.hero-img {
+    width: 50px;
+    
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center
+    width: 80%;
+    max-width: 850px;
+    padding: 30px 0px;
+    font-weight: 200;
     text-align: center;
-    color: black;
-    margin: auto;
+    
 }
 
-.banner__title{
-    line-height: 1.5;
-    font-size: 2em;
-    font-family: sans-serif;
-}
-
-.banner__p{
-    line-height: 2;
-    font-size: 0.9;
-    font-family: sans-serif;
-}
- 
-
-nav {
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
-     background-color: black;
-}
 a {
-    color: red;
+    color: rgb(13, 15, 1);
 }
 p  {
-    color: rgb(240, 247, 234);
-}
-h1 {
- 
+    color: rgb(34, 8, 236);
 }
 
-p {
-    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+
+
+
+body {
+    background: yellow;
+    background-image: url(imag/textura\ de\ cerveza.jpg);
+  
 }
 
-ul  {
-    list-style: none;
+@media (max-width: 992px) {
+    .hero-presentation {
+        text-align: center;
+        width: 20%;
+        align-items: center;
+    }
+}
+
+.hero-presentation h1 {
+    display: block;
+    width: 100%;
+    }
+
+.hero-presentation p {
+    max-width: 80%;
+    font-size: 16px;
+}    
+
+.button-container {
+    justify-content: center;
+
+}
+
+.hero-img {
     display: flex;
-    gap: 10px;
+    width: 375px;
 }
 
-img {
-width: 40px;
+#about {
+    font-size: 20px;
 }
 
-.wall{
- height: 100vh;   
+@media (max-width: 992px) {
+   .navbar ul {
+    background-color: white;
+    width: 100%;
+    height: calc(100vh - 80px);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(200%);
+    transition: all 0.4s ease-out;
+   } 
+}
+
+.navbar i {
+    display: block;
+}
+
+#toggle-menu: checked ~ .navbar-list {
+    transform: translatex (0%)
+    transition: all 0.4s ease-in;
+}
+.hero-presentation p {
+    max-width: 100%;
+}
+
+/**Servicios**/
+
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 0.01rem;
+    
+}
+
+.servicios {
+    display: flex;
+    align-items: center;
+}
+
+.servicios h3 {
+ 
+ font-weight: normal;
+ color: red
+  
+  
+}
+
+.servicios .iconos {
+    height: 5rem;
+    width: 5rem;
+    background-color: rgb(25, 10, 245);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicios p {
+    line-height: 3;
+}
+
+footer {
+    width: 010%;
+    position: absolute;
+    bottom: 0;
+    left: ;
+    padding: 2rem 8%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
