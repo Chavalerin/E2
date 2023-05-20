@@ -6,17 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChavalerosAppBar</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
-     crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
  
     <header class="header">
         <img src="imag/cerveza logo.png" alt="logo">
-    <nav class="navbar">
-        <label for="toggle-menu"><i class="fas fa-bars"></i></label>
+    <nav class="navbar contenedor">
+        <label for="toggle-menu"><i class="fa-solid fa-bars"></i></label>
         <input type="checkbox" id="toggle-menu">
         <ul class="navbar-list">
             <li><a class="navbar-link" href="#">Inicio</a></li>
@@ -24,9 +22,9 @@
             <li><a class="navbar-link" href="nosotros.html">Nosotros</a></li>
             <li><a class="navbar-link" href="#">Contacto</a></li>
         </ul>
-
     </nav>
 </header>
+
 
 <main>
     <section id="hero">
@@ -38,6 +36,7 @@
         <div class="button-container">
             <a href="#" class="primary-btn">Ofertas</a>
             <a href="#" class="alt-btn">Reservas</a>
+            <a href="#" class="other-btn">Happy Hours</a>
         </div>
     </div>    
     <img src="imag/barra de cerveza.jpeg" alt="imagen de una barra de cerveza" class="hero-img">
@@ -45,51 +44,60 @@
     <section id="about">
     <p>
     Es mas facil empezar el dia cuando sabes que terminara con una buena cerveza, siente la belleza de la noche,
-    disfruta tu comida con buena musica y sientete despierto toda la noche #ChavalerosAppBar.-
+    disfruta tu comida con buena musica, #ChavalerosAppBar.-
     </p>    
     </section>
     
-    <h2>Servicios Adicionales</h2>
-    <div class="servicios">
-    <section class="servicios">
-    <h3>Descargas</h3>
-    <div class="iconos">
-    <img src="imag/icons8-carpeta-de-descargas-64.png" alt="carpeta de descarga">
-    </div>
-    <p>descarga la app del bar</p>
-    </section>
-    <section>
-    <h3>Registrate</h3>
-    <div class="iconos">
-    <img src="imag/icons8-añadir-usuario-masculino-48.png" alt="añadir persona">
-    </div>
-    <p>Registrate y accede a beneficios</p>
-    </section>
-    <section>
-    <h3>Sorteos</h3>
-    <div class="iconos">
-    <img src="imag/icons8-lottery-64.png" alt="imagen de loteria">
-    </div>
-    <p>Aqui veras a los ganadores del mes</p>
-    </section>
+    
+    
 </div>
 </main>    
+<div class="container">
+    <h2>Servicios adicionales</h2>
+  </div>
 
-<footer>
-    <img src="imag/cerveza logo.png" alt="logo de cerveza" class="logo">
-    <div class="social-icons-container">
-        <a href="#" class="social-icons-container"></a>
-        <a href="#" class="social-icons-container"></a>
-        <a href="#" class="social-icons-container"></a>
-        <a href="#" class="social-icons-container"></a>
+<div class="card-container">
+    <div class="card">
+      <h2>Sorteo</h2>
+      <img src="imag/icons8-lottery-64.png" alt="imagen de sorteo">
+      <a href="#" class="card">
+      <p>Aqui estan los ganadores.</p>
+    </a>
     </div>
-    <ul class="footer-menu-container">
-        <li class="menu-item">Legal</li>
-        <li class="menu-item">Cookies</li>
-        <li class="menu-item">Privacy</li>
-    </ul>
-    <span class="Copyright"></span>
-</footer>
 
+    <div class="card">
+      <h2>ChavalerosAppBar</h2>
+      <img src="imag/icons8-carpeta-de-descargas-64.png" alt="carpeta de descarga">
+      <a href="#" class="card">
+      <p>Descarga la App</p>
+    </a>
+    </div>
+
+    <div class="card">
+      <h2>Registrate</h2>
+      <img src="imag/icons8-añadir-usuario-masculino-48.png" alt="imagen usuario">
+      <a href="#" class="card">
+      <p>Registrate y particia de sorteos</p>
+    </a>
+    </div>
+        
+        <footer>
+            <div class="container">
+              <div class="logo">
+                <img src="imag/cerveza logo.png" alt="Logo">
+              </div>
+              <div class="contact">
+                <h3>Contact</h3>
+                <p>Correo: ChavalerosAppBar@ChavalerosAppBar.com.ar</p>
+                <p>Teléfono: 123-456-7890</p>
+              </div>
+              <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </footer>
+          
 </body>
 </html>
